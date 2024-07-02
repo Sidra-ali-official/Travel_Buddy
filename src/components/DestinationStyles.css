@@ -1,0 +1,104 @@
+.destination {
+  margin: 4rem 6rem;
+}
+
+.destination h1 {
+  font-size: 3rem;
+}
+
+.destination p {
+  margin-bottom: 1rem;
+}
+
+.first-des {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4.5rem;
+}
+
+.first-des-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4.5rem;
+}
+
+.des-text {
+  width: 65%;
+  text-align: start;
+  font-size: 1.1rem;
+  padding-left: 2rem; /* Adds space before the text */
+}
+
+.des-text h2 {
+  padding-bottom: 1rem;
+}
+
+.image {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  position: relative; /* Ensure container has relative positioning */
+  padding: 0 1.5rem; /* Adjust padding to add space around the container */
+}
+
+.image img {
+  width: 48%;
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: -1px 1px 62px -18px rgba(0, 0, 0, 0.19);
+  margin-bottom: 3rem;
+}
+
+.image img:first-child {
+  margin-right: 2%; /* Adjust the value to add space between the images */
+}
+
+.image img:nth-child(2) {
+  position: relative;
+  top: -30px; /* Adjust the value to move the second image upwards */
+  margin-left: 2%; /* Adjust the value to add space between the images */
+}
+
+@media screen and (max-width: 850px) {
+  .destination {
+    margin: 4rem 2rem;
+  }
+
+  .first-des,
+  .first-des-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 2.5rem;
+  }
+
+  .des-text {
+    width: 100%;
+    margin: 1.8rem 0;
+  }
+
+  .image {
+    width: 100%; /* Ensure the image container takes full width */
+    padding: 0; /* Remove padding on smaller screens */
+    flex-direction: row; /* Keep images in a row */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .image img {
+    width: 48%; /* Ensure images take nearly half of the container width */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 0; /* Remove bottom margin */
+  }
+
+  .image img:first-child {
+    margin-right: 2%; /* Adjust the value to add space between the images */
+  }
+
+  .image img:nth-child(2) {
+    margin-left: 2%; /* Adjust the value to add space between the images */
+    top: -15px; /* Slightly adjust position to create staggered effect */
+  }
+}
